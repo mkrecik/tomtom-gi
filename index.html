@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>a happy truck driver</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/main.css"/>
+		<link rel='stylesheet' type='text/css' href='assets/tomtom-international-web-sdk-maps-6.21.3/dist/maps.css'/>
+        <link href='/assets/SearchBox/SearchBox.css' rel='stylesheet' />
+		
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<h1 id="title">How to be a HAPPY truck driver</h1>
+						</div>
+					</div>
+				</header>
+		</div>
+		<div id="description">
+				<h3>Design a trip</h3>
+				<p>Starting from Warsaw, choose a city of delivery and the desired time of completion.
+					<br>We will provide you with a plan of your trip, which will ensure a sufficient rest time and suggest convenient stops, but also make sure you stay on top of your task!</p>
+				<p class="sub" style="margin-left:0px; margin-top:-10px;">Data used comes from <a href="https://transport.ec.europa.eu/transport-modes/road/social-provisions/driving-time-and-rest-periods_en">EU regulations</a> on truck drivers' work and rest hours.</p>
+		</div>
+				<div id = "choice">
+			<form>
+				<div id="col1">
+				<h4>Choice of destination</h4>
+					<label id ="journ_begin" class = "form">City of departure<br>
+					<select id = "city_begin" class ="data">
+						<option value="wwa">Warszawa</option>
+					</select></label><br>
+					<label id = "journ_end" class = "form">City of arrival<br>
+					<select id = "city_end" class = "data">
+						<option class="sub">select a city</option>
+						<option value="war">Warszawa</option>
+						<option value="cra">Kraków</option>
+						<option value="wro">Wrocław</option>
+						<option value="poz">Poznań</option>
+						<option value="gda">Gdańsk</option>
+						<option value="lod">Łódź</option>
+						<option value="kat">Katowice</option>
+						<option value="mil">Milano</option>
+						<option value="rom">Rome</option>
+						<option value="mad">Madrid</option>
+						<option value="ven">Venice</option>
+					</select></label><br>
+					<label class="form">Time<br><input type="number" class = "data" id = "time">hours</label><br>
+					<p class="sub">the deadline, not required</p>
+					<button onclick="breaks()" id = "plan_button" class="form" type = "button">PLAN</button><br>
+					</div></form>
+				<h4>Your route plan</h4>
+					<div class="col2"><form>
+					<!-- <label class="form">Alter the length of total breaks: <input type="number" class = "data" id = "break_length"></label> minutes<br><br> -->
+					<label class="form">Journey time:<div class = "result_border"><span id="journ_time" class="result"></span></div></label><br>
+					<p class="sub">an estimate, taking the highway</p>
+					<label class="form">Total break time:<div class="result_border"><span id="break_time" class="result"></span>hours</div><br>including</label><br>
+					<label class="form"><div class = "result_border"><span id="breaks15" class="result"></span></div><span class="time"></span>15-minute breaks</span></label><br>
+					<label class="form"><div class="result_border"><span id="breaks30" class="result"></span></div><span class="time"></span>30-minute breaks</span></label><br>
+					<label class="form"><div class = "result_border"><span id="breaks11" class="result"></span></div><span class="time">11-hour breaks</span></label><br>
+					<label class="form">Route length: <div class ="result_border"><span id="route" class="result"></span> km</div></label><br>
+					<p class="sub">an estimate, taking the highway</p>
+					</form></div>
+				</div>
+			</div>
+		<h3 class="map">Here's a map</h3>
+		<form id ="form">
+		<label><input type="text" id="query"></label>
+        <button type="button" id="search">Search</button>
+		</form>
+		<div id="map" class="map"></div>
+
+		<script src='assets/tomtom-international-web-sdk-maps-6.21.3/dist/maps-web.min.js'></script>
+		<script src='assets/tomtom-international-web-sdk-services-6.21.3/dist/services-web.min.js'></script>
+		<script src='/assets/SearchBox/SearchBox-web.js'></script>
+		<script class="map" src="assets/map.js"></script>
+		<script src="assets/city_coordinates.js"></script>
+		<script src="assets/count.js"></script>
+	</body>
+</html>
