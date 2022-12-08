@@ -1,6 +1,20 @@
 html body{
     font-family:"Calibri", sans-serif;
     background-color:white;
+    min-width:100vh;
+}
+h4{
+    color:darkcyan;
+    font-family:monospace;
+    font-size: 1.2em;
+    font-style: bold;
+}
+::placeholder{
+    font-size: 0.8em;
+    padding:5px;
+}
+option:first{
+    color:grey;
 }
 #description{
     margin: 0 auto;
@@ -11,36 +25,42 @@ html body{
     margin:20px;
     font-style: bold;
 }
-#col1{
-    width: 30%;
+#col1 {
+    width: 33.33%;
     height: 100%;
     float: left;
 }
 #col2{
-    width: 70%;
+    width: 33.33%;
     height: 100%;
-    float: right;
+    float: left;
 }
 .form{
     margin:20px;
     padding:5px;
 }
-
+#choice{
+    margin:20px;
+    padding:5px;
+}
 #search{
     margin-bottom:20px;
     padding:2px;
 }
 #plan_button{
+    color:darksalmon;
+    font-size: 1.2em;
+    font-family:'Typewriter', monospace;
     font-style: bold;
-    padding:8px;
+    font-weight: 900;
+    padding:5px;
     width:200px;
-    border:2px solid;;
-    background-color: darksalmon;
-    /* box-shadow: 5px 5px lightblue; */
+    border:2px solid darksalmon;
+    border-radius: 5px;
 }
 #plan_button:hover{
-    background-color: lightblue;
-    border:2px solid darksalmon;
+    background-color: darksalmon;
+    color:white;
 }
 #answer{
     margin-top:20px;
@@ -63,28 +83,21 @@ html body{
     font-style: bold;
     line-height: 6px;
 }
-
-#choice {
-    padding:2px;
-    margin-left:10px;
-    margin-top:30px;
-}
 #title{
     color: darksalmon;
-    font-family:'Comic Sans', monospace;
+    font-family:monospace;
     font-style: bold;
     text-align: center;
 }
 
 #map {
-    width: 70vw;
+    width: 100vw;
     height: 50vh;
     margin: 0; 
     padding: 0;
 }
 .map{
     text-align: left;
-    margin-top:130px;
     margin-left:20px;
 }
 .result_border{
@@ -98,9 +111,6 @@ html body{
     line-height: 10px;
     text-align: center;
 }
-.result_border:hover{
-    border:2px solid lightblue;
-}
 .sub{
     font-size: 0.8em;
     color:darkgrey;
@@ -112,5 +122,9 @@ html body{
 }
 .time{
 margin-left:70px;
+}
+#consider{
+    font-size: 0.8em;
+    color:salmon;
 }
 
