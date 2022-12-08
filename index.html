@@ -30,26 +30,52 @@
 		<div id = "choice">
 			<form>
 				<div id="col1">
-				<h4>Choice of destination</h4>
-					<label id ="journ_begin" class = "form">City of departure<br>
+				<h4>Choose an MLP logistics centre</h4>
+					<label id ="journ_begin" class = "form">Starting point<br>
 					<select id = "city_begin" class ="data">
-						<option value="wwa">Warszawa</option>
+						<option class="sub">select a logistic center</option>
+						<option value="Czeladź">MLP Czeladź</option>
+						<option value="Gliwice">MLP Gliwice</option>
+						<option value="Lublin">MLP Lublin</option>
+						<option value="Łódź">MLP Łódź</option>
+						<option value="Poznań">MLP Poznań</option>
+						<option value="PoznańWest">MLP Poznań West</option>
+						<option value="PruszkówI">MLP Pruszków I</option>
+						<option value="PruszkówII">MLP Pruszków II</option>
+						<option value="Teresin">MLP Teresin</option>
+						<option value="Wrocław">MLP Wrocław</option>
+						<option value="WrocławWest">MLP Wrocław West</option>
+						<option value="ParkPoznań">MLP Business Park Poznań</option>
+						<option value="Gorzów">MLP Gorzów Wielkopolski</option>
+						<option value="Vienna">MLP Business Park Vienna</option>
+						<option value="Berlin">MLP Business Park Berlin</option>
+						<option value="Niederrhein">MLP Business Park Niederrhein-Schwalmtal</option>
+						<option value="Unna">MLP Unna</option>
+						<option value="Schalke">MLP Business Park Schalke</option>
+						<option value="Bucharest">MLP Business Park Bucharest West</option>
 					</select></label><br>
-					<label id = "journ_end" class = "form">City of arrival<br>
+					<label id = "journ_end" class = "form">Destination<br>
 					<select id = "city_end" class = "data">
-						<option class="sub">select a city</option>
-						<option value="war">Warszawa</option>
-						<option value="cra">Kraków</option>
-						<option value="wro">Wrocław</option>
-						<option value="poz">Poznań</option>
-						<option value="gda">Gdańsk</option>
-						<option value="lod">Łódź</option>
-						<option value="kat">Katowice</option>
-						<option value="mil">Milano</option>
-						<option value="rom">Rome</option>
-						<option value="mad">Madrid</option>
-						<option value="ven">Venice</option>
-						<option value="syd">Sydney</option>
+						<option class="sub">select a logistic center</option>
+						<option value="Czeladź">MLP Czeladź</option>
+						<option value="Gliwice">MLP Gliwice</option>
+						<option value="Lublin">MLP Lublin</option>
+						<option value="Łódź">MLP Łódź</option>
+						<option value="Poznań">MLP Poznań</option>
+						<option value="PoznańWest">MLP Poznań West</option>
+						<option value="PruszkówI">MLP Pruszków I</option>
+						<option value="PruszkówII">MLP Pruszków II</option>
+						<option value="Teresin">MLP Teresin</option>
+						<option value="Wrocław">MLP Wrocław</option>
+						<option value="WrocławWest">MLP Wrocław West</option>
+						<option value="ParkPoznań">MLP Business Park Poznań</option>
+						<option value="Gorzów">MLP Gorzów Wielkopolski</option>
+						<option value="Vienna">MLP Business Park Vienna</option>
+						<option value="Berlin">MLP Business Park Berlin</option>
+						<option value="Niederrhein">MLP Business Park Niederrhein-Schwalmtal</option>
+						<option value="Unna">MLP Unna</option>
+						<option value="Schalke">MLP Business Park Schalke</option>
+						<option value="Bucharest">MLP Business Park Bucharest West</option>
 					</select></label><br>
 					<label class="form">Time<br><input type="number" class = "data" id = "time" placeholder="hours"></label><br>
 					<p class="sub">the deadline, not required</p>
@@ -75,11 +101,12 @@
 			</div>
 		</div>
 		<h3 class="map">Here's a map</h3>
-		<form id ="form">
+		<!-- <form id ="form">
 		<label><input type="text" id="query"></label>
         <button type="button" id="search">Search</button>
-		</form>
+		</form> -->
 		<div id="map" class="map"></div>
+		<div id ="marker_mlp"></div>
 
 		<script src='assets/tomtom-international-web-sdk-maps-6.21.3/dist/maps-web.min.js'></script>
 		<script src='assets/tomtom-international-web-sdk-services-6.21.3/dist/services-web.min.js'></script>
