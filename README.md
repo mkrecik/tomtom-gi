@@ -16,9 +16,9 @@ Alternatively, import these files into the javascript code.
 ```
 ##Contents
   Our solution files:
-    `index.html` - Our website for truck drivers
-    `city_coordinates.js` - Coordinates of logistics centres and a function, and distances between them
-    `map.js` - The map and markers
-    `count.js` - Functions determing the breaks and the total times of the route
-    `main.css` - Styles for the website
+   - `index.html` - Our website for truck drivers
+   - `city_coordinates.js` - Coordinates of logistics centres and a function, and distances between them
+   - `map.js` - The map and markers
+   - `count.js` - Functions determing the breaks and the total times of the route
+   - `main.css` - Styles for the website
 
