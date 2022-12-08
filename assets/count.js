@@ -33,9 +33,10 @@ time_total = document.getElementById("time");
 var plan_button = document.getElementById("plan_button");
 
 function route(){
-    var city = document.getElementById("city_end").value;
+    var city1 = document.getElementById("city_begin").value;
+    var city2 = document.getElementById("city_end").value;
     var route = document.getElementById("route");
-    var route_to_time = get_route(city);
+    var route_to_time = get_route(city1,city2);
     route.innerHTML=route_to_time+"km";
     var journ_time = document.getElementById("journ_time");
     var route_time = route_to_time/avr_velocity;
@@ -49,8 +50,9 @@ function route(){
 };
 
 function breaks(){
-    var city = document.getElementById("city_end").value;
-    var route_to_time = get_route(city);
+    var city1 = document.getElementById("city_begin").value;
+    var city2 = document.getElementById("city_end").value;
+    var route_to_time = get_route(city1,city2);
     var journ_time = route_to_time/avr_velocity;
     var breaks_15 = document.getElementById("breaks15");
     var breaks_30 = document.getElementById("breaks30");
@@ -104,6 +106,10 @@ function breaks(){
             deadline.innerHTML="The plan doesn't meet the deadline";
         }
     }
+    var marker1= new tt.Marker().setLngLat(get_cord(city1)).addTo(map);
+    var marker2= new tt.Marker().setLngLat(get_cord(city2)).addTo(map);
+    marker1.setPopup(popup).togglePopup()
+    marker2.setPopup(popup).togglePopup()
 };
 plan_button.addEventListener('click', route);
 plan_button.addEventListener('click', breaks);
