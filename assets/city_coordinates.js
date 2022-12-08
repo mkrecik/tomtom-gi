@@ -27,7 +27,7 @@ function get_cord(city){
         case"Gorzów":
             return{lat:52.91851736217094, lng:15.239960257744078};
         case"Vienna":
-            return{lat:52.17856788597538, lng:20.813442140627572};
+            return{lat:48.31460198660888, lng:16.427974878127113};
         case"Berlin":
             return{lat:52.37741143164078, lng:13.160128061448656};
         case"Niederrhein":
