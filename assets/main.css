@@ -26,12 +26,12 @@ option:first{
     font-style: bold;
 }
 #col1 {
-    width: 33.33%;
+    width: 40%;
     height: 100%;
     float: left;
 }
 #col2{
-    width: 33.33%;
+    width: 60%;
     height: 100%;
     float: left;
 }
@@ -91,7 +91,7 @@ option:first{
 }
 
 #map {
-    width: 100vw;
+    width: 98vw;
     height: 50vh;
     margin: 0; 
     padding: 0;
@@ -127,4 +127,10 @@ margin-left:70px;
     font-size: 0.8em;
     color:salmon;
 }
+#marker_mlp{
+    background-image: url('assets/marker.png');
+    background-size: cover;
+    width: 50px;
+    height: 70px;
+  }
 
